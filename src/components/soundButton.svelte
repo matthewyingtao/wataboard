@@ -11,8 +11,13 @@
 
 <button
 	on:click={() => {
-		soundEl.load();
 		soundEl.play();
+	}}
+	on:mouseover={() => {
+		soundEl.load();
+	}}
+	on:focus={() => {
+		soundEl.load();
 	}}
 >
 	{sound}

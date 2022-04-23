@@ -1,32 +1,51 @@
 <script>
-	import { sounds } from '../data/sounds.js';
-	import SoundButton from '../components/soundButton.svelte';
+	import SoundGrid from '../components/SoundGrid.svelte';
 </script>
 
 <main>
-	<h1>Wataboard</h1>
-
-	<div class="sound-grid">
-		{#each sounds as sound}
-			<SoundButton {sound} />
-		{/each}
-	</div>
+	<aside>
+		<h1>Wataboard</h1>
+		<SoundGrid />
+	</aside>
+	<img src="/watameSinging.png" alt="" />
 </main>
 
 <style>
 	main {
-		max-width: 55rem;
-		margin: 2rem auto;
+		position: relative;
+		padding: 3rem 1.5rem;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	aside {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		max-width: 40rem;
+		margin: auto;
 	}
 
 	h1 {
 		text-align: center;
-		margin-bottom: 2rem;
+		font-size: 4rem;
 	}
 
-	.sound-grid {
-		display: flex;
-		flex-wrap: wrap;
-		grid-gap: 1rem;
+	img {
+		display: none;
+	}
+
+	@media screen and (min-width: 50rem) {
+		main {
+			grid-template-columns: 3fr 1fr;
+		}
+
+		img {
+			display: block;
+			position: sticky;
+			top: 3rem;
+			width: 100%;
+			min-width: 25rem;
+		}
 	}
 </style>

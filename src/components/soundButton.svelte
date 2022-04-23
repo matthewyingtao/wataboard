@@ -19,6 +19,11 @@
 
 <style>
 	button {
+		display: block;
+		background: white;
+		border: 1px solid #000b42;
+		border-radius: 999px;
+		padding: 0.5rem 1rem;
 		flex-grow: 1;
 	}
 </style>

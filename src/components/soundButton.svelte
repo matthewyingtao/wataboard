@@ -5,14 +5,15 @@
 
 	const soundEl = new Howl({
 		src: [`/sounds/${sound}`],
-		preload: true
+		preload: false
 	});
 </script>
 
 <button
-	on:click={() =>
-		// @ts-ignore
-		soundEl.play()}
+	on:click={() => {
+		soundEl.load();
+		soundEl.play();
+	}}
 >
 	{sound}
 </button>

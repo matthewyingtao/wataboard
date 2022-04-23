@@ -1,6 +1,9 @@
 export const sounds = [
 	{
-		title: 'Catch Phrases',
+		title: {
+			en: 'Catch Phrases',
+			jp: 'キャッチ・フレーゼズ'
+		},
 		sounds: [
 			{
 				en: '00_pkmn_EN',
@@ -75,7 +78,10 @@ export const sounds = [
 		]
 	},
 	{
-		title: 'noises',
+		title: {
+			en: 'noises',
+			jp: 'ノイゼズ'
+		},
 		sounds: [
 			{
 				en: '15-shion wheeze_EN',
@@ -130,7 +136,10 @@ export const sounds = [
 		]
 	},
 	{
-		title: 'Other',
+		title: {
+			en: 'Other',
+			jp: 'アザー'
+		},
 		sounds: [
 			{
 				en: '40_haaaanya_EN',
@@ -305,7 +314,10 @@ export const sounds = [
 		]
 	},
 	{
-		title: 'sneeze tskr',
+		title: {
+			en: 'sneeze tskr',
+			jp: 'くしゃみ助かる'
+		},
 		sounds: [
 			{
 				en: 'Sneeze 1_EN',

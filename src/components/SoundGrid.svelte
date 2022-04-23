@@ -15,7 +15,7 @@
 </div>
 {#each sounds as section}
 	<section>
-		<h2>{section.title}</h2>
+		<h2>{language == "EN" ? section.title.en : section.title.jp}</h2>
 		<div class="sound-grid">
 			{#each section.sounds as sound}
 				<SoundButton {sound} {language}/>

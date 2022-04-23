@@ -2,9 +2,12 @@
 	import { Howl } from 'howler';
 
 	export let sound;
+	export let language;
+
+	$: soundName = language == "EN" ? sound.en : sound.jp;
 
 	const soundEl = new Howl({
-		src: [`/sounds/${sound}`],
+		src: [`/sounds/${sound.file}`],
 		preload: false
 	});
 </script>
@@ -20,7 +23,7 @@
 		soundEl.load();
 	}}
 >
-	{sound}
+	{soundName}
 </button>
 
 <style>

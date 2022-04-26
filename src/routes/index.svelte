@@ -1,10 +1,14 @@
 <script>
+	import LangSelect from './../components/LangSelect.svelte';
 	import SoundGrid from '../components/SoundGrid.svelte';
 </script>
 
 <main>
 	<aside>
-		<h1>Wataboard</h1>
+		<div>
+			<h1>Wataboard</h1>
+			<LangSelect />
+		</div>
 		<SoundGrid />
 	</aside>
 	<img src="/watameSinging.png" alt="" />

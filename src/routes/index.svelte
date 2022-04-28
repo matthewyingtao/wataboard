@@ -33,6 +33,8 @@
 	h1 {
 		text-align: center;
 		font-size: 4rem;
+		color: rgb(255, 250, 203);
+		text-shadow: 0 0 0.6em rgb(255, 243, 137), 0 0 1em rgb(255, 243, 137);
 	}
 
 	img {

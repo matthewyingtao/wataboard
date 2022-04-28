@@ -23,6 +23,8 @@
 	h2 {
 		font-size: 2.5rem;
 		margin-bottom: 1rem;
+		color: white;
+		text-shadow: 0 0 0.2em white, 0 0 1em white;
 	}
 
 	.heading {

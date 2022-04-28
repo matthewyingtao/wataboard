@@ -1,8 +1,8 @@
 body {
 	font-family: 'Signika', sans-serif;
-	background-color: #4e9948;
+	background-color: black;
 	color: #000b42;
-	background-image: url('/bg.jpg');
+	background-image: url('/WatameSoundboardBG.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	font-weight: 300;

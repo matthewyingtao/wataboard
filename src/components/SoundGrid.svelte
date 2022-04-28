@@ -21,25 +21,26 @@
 
 <style>
 	h2 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		margin-bottom: 1rem;
-		color: white;
+		color: rgba(255, 255, 255, 0.8);
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
 		text-shadow: 0 0 0.2em white, 0 0 1em white;
 	}
 
 	.heading {
 		display: flex;
-		gap: 0.5rem;
+		gap: 1rem;
 	}
 
 	.penlights {
-		margin-top: 0.5rem;
 		height: 2.5rem;
 	}
 
 	.sound-grid {
 		display: flex;
 		flex-wrap: wrap;
-		grid-gap: 1rem;
+		grid-gap: 1.5rem;
 	}
 </style>

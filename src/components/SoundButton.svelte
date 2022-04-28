@@ -32,12 +32,26 @@
 		position: relative;
 		display: block;
 		cursor: pointer;
-		background: linear-gradient(to bottom, #fff4d6, #ffe382);
-		border: 1px solid #000b42;
+		background: linear-gradient(to top, hsl(57, 90%, 75%), hsl(57, 100%, 90%));
+		border: none;
 		border-radius: 999px;
 		padding: 0.5rem 2rem;
+		box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.6);
 		flex-grow: 1;
 		transition: transform 150ms ease-out;
+	}
+
+	button::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 999px;
+		box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+		opacity: 0;
+		transition: opacity 150ms ease-out;
 	}
 
 	.glasses {
@@ -55,6 +69,10 @@
 	}
 
 	button:hover .glasses {
+		opacity: 1;
+	}
+
+	button:hover::after {
 		opacity: 1;
 	}
 
